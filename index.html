@@ -158,8 +158,9 @@
         <button onclick="send_answer()">Gönder</button>
     </div>
 
-    <script src="/base_methods.js" type="text/javascript"></script>
-    <script src="/darkmode.js" type="text/javascript"></script>
+    <script src="./scripts/base_methods.js" type="text/javascript"></script>
+    <script src="./scripts/darkmode.js" type="text/javascript"></script>
+    <script src="./data/words.js" type="text/javascript"></script>
 
     <script type="text/javascript">
         var correctAnswer = '';
@@ -174,31 +175,22 @@
 
         function get_related_words() {
             window.answerWord.value = '';
-            var xhr = new XMLHttpRequest();
-            xhr.open('GET', '/word', true);
-            xhr.onload = function () {
-                if (this.status == 200) {
-                    var response = JSON.parse(this.responseText);
-                    correctAnswer = response.name;
-                    var relatedWords = response.relations;
-                    var relatedWordsString = '';
 
-                    if (relatedWords.length == 0) {
-                        get_related_words();
-                    }
+            var response = dbWords[Math.floor(Math.random() * dbWords.length)];
+            correctAnswer = response.name;
+            var relatedWords = response.relations;
+            var relatedWordsString = '';
 
-                    var randomItems = getRandom(relatedWords, 2);
-                    for (var i = 0; i < randomItems.length; i++) {
-                        relatedWordsString += '<span class="relWorkItem">' + randomItems[i] + '</span>';
-                    }
-
-                    document.getElementById('relatedwords').innerHTML = relatedWordsString;
-                }
-                else {
-                    alet('Bir hata oluştu. Tekrar deneyin.');
-                }
+            if (relatedWords.length == 0) {
+                get_related_words();
             }
-            xhr.send();
+
+            var randomItems = getRandom(relatedWords, 2);
+            for (var i = 0; i < randomItems.length; i++) {
+                relatedWordsString += '<span class="relWorkItem">' + randomItems[i] + '</span>';
+            }
+
+            document.getElementById('relatedwords').innerHTML = relatedWordsString;
         }
 
         function send_answer() {
@@ -210,7 +202,7 @@
                 alert('Yanlış cevap!');
             }
         }
-        
+
         window.answerWord = document.getElementById('answerWord');
     </script>
 </body>

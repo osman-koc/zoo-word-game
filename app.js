@@ -8,6 +8,14 @@ let dbWords = [];
 app.get("/", function (req, res) {
     res.sendFile(__dirname + '/index.html');
 });
+//DarkMode
+app.get("/darkmode.js", function (req, res) {
+    res.sendFile(__dirname + '/scripts/darkmode.js');
+});
+//BaseMethods
+app.get("/base_methods.js", function (req, res) {
+    res.sendFile(__dirname + '/scripts/base_methods.js');
+});
 
 // Read the file and store the words in an array
 fs.readFile('./words.json', 'utf8', function (err, data) { 

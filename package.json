@@ -1,7 +1,7 @@
 {
   "name": "zoo",
-  "version": "1.0.0",
-  "description": "related word game",
+  "version": "1.1.0",
+  "description": "related word guessing game",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

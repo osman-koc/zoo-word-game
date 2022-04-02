@@ -158,46 +158,19 @@
         <button onclick="send_answer()">Gönder</button>
     </div>
 
-    <script>
+    <script src="/base_methods.js" type="text/javascript"></script>
+    <script src="/darkmode.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
         var correctAnswer = '';
         get_related_words();
 
-        window.answerWord.addEventListener("keyup", function(event) {
+        window.answerWord.addEventListener("keyup", function (event) {
             if (event.keyCode === 13) {
                 event.preventDefault();
                 send_answer();
             }
         });
-
-        String.prototype.turkishToUpper = function () {
-            var string = this;
-            var letters = { "i": "İ", "ş": "Ş", "ğ": "Ğ", "ü": "Ü", "ö": "Ö", "ç": "Ç", "ı": "I" };
-            string = string.replace(/(([iışğüçö]))/g, function (letter) { return letters[letter]; });
-            return string.toUpperCase();
-        }
-
-        function toggle_dark_mode() {
-            if (window.btnDarkMode.innerHTML == 'Dark Mode') {
-                window.btnDarkMode.innerHTML = 'Light Mode';
-            } else {
-                window.btnDarkMode.innerHTML = 'Dark Mode';
-            }
-            document.querySelector('body').classList.toggle('dark-mode');
-        }
-
-        function is_user_wants_dark_mode() {
-            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                return true;
-            } else {
-                return false;
-            }
-        }
-
-        function toggle_dark_mode_onload() {
-            if (is_user_wants_dark_mode() == true) {
-                toggle_dark_mode();
-            }
-        }
 
         function get_related_words() {
             window.answerWord.value = '';
@@ -209,11 +182,20 @@
                     correctAnswer = response.name;
                     var relatedWords = response.relations;
                     var relatedWordsString = '';
-                    //relatedWords.length
-                    for (var i = 0; i < 2; i++) {
-                        relatedWordsString += '<span class="relWorkItem">' + relatedWords[i] + '</span>';
+
+                    if (relatedWords.length == 0) {
+                        get_related_words();
                     }
+
+                    var randomItems = getRandom(relatedWords, 2);
+                    for (var i = 0; i < randomItems.length; i++) {
+                        relatedWordsString += '<span class="relWorkItem">' + randomItems[i] + '</span>';
+                    }
+
                     document.getElementById('relatedwords').innerHTML = relatedWordsString;
+                }
+                else {
+                    alet('Bir hata oluştu. Tekrar deneyin.');
                 }
             }
             xhr.send();
@@ -228,12 +210,8 @@
                 alert('Yanlış cevap!');
             }
         }
-
-        window.btnDarkMode = document.getElementById('btn-dark-mode');
+        
         window.answerWord = document.getElementById('answerWord');
-
-        btnDarkMode.addEventListener('click', toggle_dark_mode, false);
-        document.addEventListener("DOMContentLoaded", toggle_dark_mode_onload, false);
     </script>
 </body>
 

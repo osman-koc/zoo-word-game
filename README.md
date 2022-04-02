@@ -6,7 +6,7 @@ Eğlence amaçlı yapılmış geliştirilmiştir.
 
 ## Oynayalım
 
-Oynamak için link: https://osman-koc.github.io/zoo-word-game
+Oynamak için link: https://osman-koc.github.io/zoo-word-game/
 
 ## Ekran Görüntüleri 
 

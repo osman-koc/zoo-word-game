@@ -67,12 +67,6 @@
             transition: color .5s, background-color .5s;
         }
 
-        #relatedwords {
-            line-height: 27px;
-            max-width: 600px;
-            color: #333;
-        }
-
         body.dark-mode {
             background-color: #121213;
         }
@@ -116,6 +110,27 @@
             font-size: 20px;
             margin: 20;
         }
+
+        #relatedwords {
+            line-height: 27px;
+            max-width: 600px;
+            color: #333;
+            padding-top: 50px;
+        }
+
+        .relWorkItem {
+            border: 1px solid rgb(54, 54, 54);
+            border-radius: 12px;
+            padding: 15px;
+            width: 50px;
+            margin: 10px;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .relWorkItem.dark-mode {
+            border: 1px solid #ccc;
+        }
     </style>
 </head>
 
@@ -129,8 +144,8 @@
     </header>
 
     <div class="container">
-        <div id="relatedwords">
-            
+        <div class="row" id="relatedwords">
+
         </div>
     </div>
 
@@ -140,10 +155,20 @@
     </div>
 
     <div class="container">
-        <button id="sendButton">Gönder</button>
+        <button onclick="send_answer()">Gönder</button>
     </div>
 
     <script>
+        var correctAnswer = '';
+        get_related_words();
+
+        window.answerWord.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                send_answer();
+            }
+        });
+
         String.prototype.turkishToUpper = function () {
             var string = this;
             var letters = { "i": "İ", "ş": "Ş", "ğ": "Ğ", "ü": "Ü", "ö": "Ö", "ç": "Ç", "ı": "I" };
@@ -157,7 +182,6 @@
             } else {
                 window.btnDarkMode.innerHTML = 'Dark Mode';
             }
-
             document.querySelector('body').classList.toggle('dark-mode');
         }
 
@@ -175,7 +199,38 @@
             }
         }
 
+        function get_related_words() {
+            window.answerWord.value = '';
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', '/word', true);
+            xhr.onload = function () {
+                if (this.status == 200) {
+                    var response = JSON.parse(this.responseText);
+                    correctAnswer = response.name;
+                    var relatedWords = response.relations;
+                    var relatedWordsString = '';
+                    //relatedWords.length
+                    for (var i = 0; i < 2; i++) {
+                        relatedWordsString += '<span class="relWorkItem">' + relatedWords[i] + '</span>';
+                    }
+                    document.getElementById('relatedwords').innerHTML = relatedWordsString;
+                }
+            }
+            xhr.send();
+        }
+
+        function send_answer() {
+            var answer = window.answerWord.value.turkishToUpper();
+            if (correctAnswer === answer) {
+                alert('Tebrikler! Doğru cevap!');
+                get_related_words();
+            } else {
+                alert('Yanlış cevap!');
+            }
+        }
+
         window.btnDarkMode = document.getElementById('btn-dark-mode');
+        window.answerWord = document.getElementById('answerWord');
 
         btnDarkMode.addEventListener('click', toggle_dark_mode, false);
         document.addEventListener("DOMContentLoaded", toggle_dark_mode_onload, false);

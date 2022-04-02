@@ -60,7 +60,8 @@
                 get_related_words();
             }
 
-            var randomItems = getRandom(relatedWords, 2);
+            var randCount = relatedWords.length > 2 ? 3 : relatedWords.length;
+            var randomItems = getRandom(relatedWords, randCount);
             for (var i = 0; i < randomItems.length; i++) {
                 relatedWordsString += '<span class="relWorkItem">' + randomItems[i] + '</span>';
             }

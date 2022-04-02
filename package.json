@@ -1,11 +1,14 @@
 {
   "name": "zoo",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "related word game",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "osman-koc",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }

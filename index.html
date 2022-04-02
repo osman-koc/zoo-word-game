@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>ZoO - İlişkili kelime tahmin oyunu</title>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: sans-serif;
+            transition: color .5s, background-color .5s;
+        }
+
+        body {
+            background-color: #eee;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #333;
+            width: 100%;
+        }
+
+        nav {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            margin: 0 14px;
+            color: #333;
+        }
+
+        #btn-dark-mode {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            justify-content: space-between;
+            max-width: 600px;
+            margin: 0 auto;
+            align-items: center;
+            padding: 5px;
+        }
+
+        input {
+            width: 580px;
+            height: 40px;
+            font-size: 24px;
+            line-height: 35px;
+            margin: 2px;
+            text-align: center;
+            text-transform: uppercase;
+            outline: none;
+            border: 2px solid #3a3a3c;
+            background-color: #eee;
+            color: #333;
+            transition: color .5s, background-color .5s;
+        }
+
+        #relatedwords {
+            line-height: 27px;
+            max-width: 600px;
+            color: #333;
+        }
+
+        body.dark-mode {
+            background-color: #121213;
+        }
+
+        body.dark-mode h1,
+        body.dark-mode a,
+        body.dark-mode p,
+        body.dark-mode #relatedwords {
+            color: gray;
+        }
+
+        body.dark-mode input {
+            border: 2px solid #3a3a3c;
+            background: #121213;
+            color: gray;
+        }
+
+        @media only screen and (min-width: 992px) {
+            input {
+                width: 580px;
+                height: 40px;
+                font-size: 24px;
+                line-height: 35px;
+                margin: 5px;
+            }
+        }
+
+        button {
+            width: 600px;
+            background-color: #4c6faf;
+            border: none;
+            color: white;
+            padding: 10px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 20;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1>ZoO</h1>
+        <nav>
+            <a href="https://github.com/osman-koc/zoo-word-game" target="_blank">Github</a>
+            <a id="btn-dark-mode">Dark Mode</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div id="relatedwords">
+            
+        </div>
+    </div>
+
+    <div class="container">
+        <p>Yukarıdaki kelimelerin ortak ilişkili olduğu bir kelime girin:</p>
+        <input id="answerWord" type="text">
+    </div>
+
+    <div class="container">
+        <button id="sendButton">Gönder</button>
+    </div>
+
+    <script>
+        String.prototype.turkishToUpper = function () {
+            var string = this;
+            var letters = { "i": "İ", "ş": "Ş", "ğ": "Ğ", "ü": "Ü", "ö": "Ö", "ç": "Ç", "ı": "I" };
+            string = string.replace(/(([iışğüçö]))/g, function (letter) { return letters[letter]; });
+            return string.toUpperCase();
+        }
+
+        function toggle_dark_mode() {
+            if (window.btnDarkMode.innerHTML == 'Dark Mode') {
+                window.btnDarkMode.innerHTML = 'Light Mode';
+            } else {
+                window.btnDarkMode.innerHTML = 'Dark Mode';
+            }
+
+            document.querySelector('body').classList.toggle('dark-mode');
+        }
+
+        function is_user_wants_dark_mode() {
+            if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function toggle_dark_mode_onload() {
+            if (is_user_wants_dark_mode() == true) {
+                toggle_dark_mode();
+            }
+        }
+
+        window.btnDarkMode = document.getElementById('btn-dark-mode');
+
+        btnDarkMode.addEventListener('click', toggle_dark_mode, false);
+        document.addEventListener("DOMContentLoaded", toggle_dark_mode_onload, false);
+    </script>
+</body>
+
+</html>

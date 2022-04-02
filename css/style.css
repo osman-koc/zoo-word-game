@@ -1,0 +1,124 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+    transition: color .5s, background-color .5s;
+}
+
+body {
+    background-color: #eee;
+}
+
+h1 {
+    font-size: 32px;
+    color: #333;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 14px;
+    color: #333;
+}
+
+#btn-dark-mode {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 5px;
+}
+
+input {
+    width: 580px;
+    height: 40px;
+    font-size: 24px;
+    line-height: 35px;
+    margin: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    outline: none;
+    border: 2px solid #3a3a3c;
+    background-color: #eee;
+    color: #333;
+    transition: color .5s, background-color .5s;
+}
+
+body.dark-mode {
+    background-color: #121213;
+}
+
+body.dark-mode h1,
+body.dark-mode a,
+body.dark-mode p,
+body.dark-mode #relatedwords {
+    color: gray;
+}
+
+body.dark-mode input {
+    border: 2px solid #3a3a3c;
+    background: #121213;
+    color: gray;
+}
+
+@media only screen and (min-width: 992px) {
+    input {
+        width: 580px;
+        height: 40px;
+        font-size: 24px;
+        line-height: 35px;
+        margin: 5px;
+    }
+}
+
+button {
+    width: 600px;
+    background-color: #4c6faf;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+p {
+    font-size: 20px;
+    margin: 20;
+}
+
+#relatedwords {
+    line-height: 27px;
+    max-width: 600px;
+    color: #333;
+    padding-top: 50px;
+}
+
+.relWorkItem {
+    border: 1px solid rgb(54, 54, 54);
+    border-radius: 12px;
+    padding: 15px;
+    width: 50px;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.relWorkItem.dark-mode {
+    border: 1px solid #ccc;
+}

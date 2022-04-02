@@ -1,0 +1,262 @@
+[
+    {
+        "name": "TAVLA",
+        "relations": [
+            "ZAR",
+            "OYUN",
+            "YENMEK",
+            "MARS",
+            "KAPI"
+        ]
+    },
+    {
+        "name": "YENMEK",
+        "relations": [
+            "TAVLA",
+            "ZAR",
+            "MARS",
+            "KAPI",
+            "OYUN"
+        ]
+    },
+    {
+        "name": "MARS",
+        "relations": [
+            "TAVLA",
+            "ZAR",
+            "YENMEK",
+            "KAPI",
+            "OYUN"
+        ]
+    },
+    {
+        "name": "KAPI",
+        "relations": [
+            "TAVLA",
+            "ZAR",
+            "YENMEK",
+            "MARS",
+            "OYUN"
+        ]
+    },
+    {
+        "name": "OYUN",
+        "relations": [
+            "TAVLA",
+            "ZAR",
+            "YENMEK",
+            "MARS",
+            "KAPI"
+        ]
+    },
+    {
+        "name": "ZAR",
+        "relations": [
+            "TAVLA",
+            "YENMEK",
+            "MARS",
+            "KAPI",
+            "OYUN"
+        ]
+    },
+    {
+        "name": "GOOGLE",
+        "relations": [
+            "ARAMA MOTORU",
+            "BİLGİSAYAR",
+            "İNTERNET",
+            "SİTE",
+            "SAYFA"
+        ]
+    },
+    {
+        "name": "ARAMA MOTORU",
+        "relations": [
+            "GOOGLE",
+            "BİLGİSAYAR",
+            "İNTERNET",
+            "SİTE",
+            "SAYFA"
+        ]
+    },
+    {
+        "name": "BİLGİSAYAR",
+        "relations": [
+            "GOOGLE",
+            "ARAMA MOTORU",
+            "İNTERNET",
+            "SİTE",
+            "SAYFA"
+        ]
+    },
+    {
+        "name": "İNTERNET",
+        "relations": [
+            "GOOGLE",
+            "ARAMA MOTORU",
+            "BİLGİSAYAR",
+            "SİTE",
+            "SAYFA"
+        ]
+    },
+    {
+        "name": "SİTE",
+        "relations": [
+            "GOOGLE",
+            "ARAMA MOTORU",
+            "BİLGİSAYAR",
+            "İNTERNET",
+            "SAYFA"
+        ]
+    },
+    {
+        "name": "SAYFA",
+        "relations": [
+            "GOOGLE",
+            "ARAMA MOTORU",
+            "BİLGİSAYAR",
+            "İNTERNET",
+            "SİTE"
+        ]
+    },
+    {
+        "name": "BILL GATES",
+        "relations": [
+            "ZENGİN",
+            "MICROSOFT",
+            "PARA",
+            "PC",
+            "WINDOWS"
+        ]
+    },
+    {
+        "name": "ZENGİN",
+        "relations": [
+            "BILL GATES",
+            "MICROSOFT",
+            "PARA",
+            "PC",
+            "WINDOWS"
+        ]
+    },
+    {
+        "name": "MICROSOFT",
+        "relations": [
+            "BILL GATES",
+            "ZENGİN",
+            "PARA",
+            "PC",
+            "WINDOWS"
+        ]
+    },
+    {
+        "name": "PARA",
+        "relations": [
+            "BILL GATES",
+            "ZENGİN",
+            "MICROSOFT",
+            "PC",
+            "WINDOWS"
+        ]
+    },
+    {
+        "name": "PC",
+        "relations": [
+            "BILL GATES",
+            "ZENGİN",
+            "MICROSOFT",
+            "PARA",
+            "WINDOWS"
+        ]
+    },
+    {
+        "name": "WINDOWS",
+        "relations": [
+            "BILL GATES",
+            "ZENGİN",
+            "MICROSOFT",
+            "PARA",
+            "PC"
+        ]
+    },
+    {
+        "name": "OKEY",
+        "relations": [
+            "ZAR",
+            "ISTAKA",
+            "TAŞ",
+            "4 KİŞİ",
+            "OYUN"
+        ]
+    },
+    {
+        "name": "ISTAKA",
+        "relations": [
+            "OKEY",
+            "ZAR",
+            "TAŞ",
+            "4 KİŞİ",
+            "OYUN"
+        ]
+    },
+    {
+        "name": "TAŞ",
+        "relations": [
+            "OKEY",
+            "ISTAKA",
+            "ZAR",
+            "4 KİŞİ",
+            "OYUN"
+        ]
+    },
+    {
+        "name": "4 KİŞİ",
+        "relations": [
+            "OKEY",
+            "ISTAKA",
+            "TAŞ",
+            "ZAR",
+            "OYUN"
+        ]
+    },
+    {
+        "name": "ZAR",
+        "relations": [
+            "OKEY",
+            "ISTAKA",
+            "TAŞ",
+            "4 KİŞİ",
+            "OYUN"
+        ]
+    },
+    {
+        "name": "OYUN",
+        "relations": [
+            "OKEY",
+            "ISTAKA",
+            "TAŞ",
+            "4 KİŞİ",
+            "ZAR"
+        ]
+    },
+    {
+        "name": "KÜÇÜK",
+        "relations": [
+            "BÜYÜK",
+            "KÜÇÜK",
+            "KÜÇÜK",
+            "KÜÇÜK",
+            "KÜÇÜK"
+        ]
+    },
+    {
+        "name": "BÜYÜK",
+        "relations": [
+            "KÜÇÜK",
+            "KÜÇÜK",
+            "KÜÇÜK",
+            "KÜÇÜK",
+            "KÜÇÜK"
+        ]
+    }
+]

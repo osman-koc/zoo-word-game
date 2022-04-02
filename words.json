@@ -238,5 +238,303 @@
             "4 KİŞİ",
             "ZAR"
         ]
+    },
+    {
+        "name": "PARA",
+        "relations": [
+            "KAĞIT",
+            "DOLAR",
+            "SATINALMA",
+            "ÜLKE",
+            "KAZANMAK"
+        ]
+    },
+    {
+        "name": "KAĞIT",
+        "relations": [
+            "PARA",
+            "DOLAR",
+            "SATINALMA",
+            "ÜLKE",
+            "KAZANMAK"
+        ]
+    },
+    {
+        "name": "DOLAR",
+        "relations": [
+            "PARA",
+            "KAĞIT",
+            "SATINALMA",
+            "ÜLKE",
+            "KAZANMAK"
+        ]
+    },
+    {
+        "name": "SATINALMA",
+        "relations": [
+            "PARA",
+            "KAĞIT",
+            "DOLAR",
+            "ÜLKE",
+            "KAZANMAK"
+        ]
+    },
+    {
+        "name": "ÜLKE",
+        "relations": [
+            "PARA",
+            "KAĞIT",
+            "DOLAR",
+            "SATINALMA",
+            "KAZANMAK"
+        ]
+    },
+    {
+        "name": "KAZANMAK",
+        "relations": [
+            "PARA",
+            "KAĞIT",
+            "DOLAR",
+            "SATINALMA",
+            "ÜLKE"
+        ]
+    },
+    {
+        "name": "ÇORAP",
+        "relations": [
+            "İNCE",
+            "KAÇMAK",
+            "TEN RENGİ",
+            "PARİZYEN",
+            "AYAK"
+        ]
+    },
+    {
+        "name": "İNCE",
+        "relations": [
+            "ÇORAP",
+            "KAÇMAK",
+            "TEN RENGİ",
+            "PARİZYEN",
+            "AYAK"
+        ]
+    },
+    {
+        "name": "KAÇMAK",
+        "relations": [
+            "ÇORAP",
+            "İNCE",
+            "TEN RENGİ",
+            "PARİZYEN",
+            "AYAK"
+        ]
+    },
+    {
+        "name": "TEN RENGİ",
+        "relations": [
+            "ÇORAP",
+            "İNCE",
+            "KAÇMAK",
+            "PARİZYEN",
+            "AYAK"
+        ]
+    },
+    {
+        "name": "PARİZYEN",
+        "relations": [
+            "ÇORAP",
+            "İNCE",
+            "KAÇMAK",
+            "TEN RENGİ",
+            "AYAK"
+        ]
+    },
+    {
+        "name": "AYAK",
+        "relations": [
+            "ÇORAP",
+            "İNCE",
+            "KAÇMAK",
+            "TEN RENGİ",
+            "PARİZYEN"
+        ]
+    },
+    {
+        "name": "KALEM",
+        "relations": [
+            "KURŞUN",
+            "TÜKENMEZ",
+            "DOLMA",
+            "KAĞIT",
+            "ÇİZGİ"
+        ]
+    },
+    {
+        "name": "KURŞUN",
+        "relations": [
+            "KALEM",
+            "TÜKENMEZ",
+            "DOLMA",
+            "KAĞIT",
+            "ÇİZGİ"
+        ]
+    },
+    {
+        "name": "TÜKENMEZ",
+        "relations": [
+            "KALEM",
+            "KURŞUN",
+            "DOLMA",
+            "KAĞIT",
+            "ÇİZGİ"
+        ]
+    },
+    {
+        "name": "DOLMA",
+        "relations": [
+            "KALEM",
+            "KURŞUN",
+            "TÜKENMEZ",
+            "KAĞIT",
+            "ÇİZGİ"
+        ]
+    },
+    {
+        "name": "KAĞIT",
+        "relations": [
+            "KALEM",
+            "KURŞUN",
+            "TÜKENMEZ",
+            "DOLMA",
+            "ÇİZGİ"
+        ]
+    },
+    {
+        "name": "ÇİZGİ",
+        "relations": [
+            "KALEM",
+            "KURŞUN",
+            "TÜKENMEZ",
+            "DOLMA",
+            "KAĞIT"
+        ]
+    },
+    {
+        "name": "KALEM",
+        "relations": [
+            "KURŞUN",
+            "TÜKENMEZ",
+            "DOLMA",
+            "KAĞIT",
+            "ÇİZGİ"
+        ]
+    },
+    {
+        "name": "KURŞUN",
+        "relations": [
+            "KALEM",
+            "TÜKENMEZ",
+            "DOLMA",
+            "KAĞIT",
+            "ÇİZGİ"
+        ]
+    },
+    {
+        "name": "AŞK",
+        "relations": [
+            "KALP",
+            "TUTKU",
+            "KIRMIZI"
+        ]
+    },
+    {
+        "name": "KALP",
+        "relations": [
+            "AŞK",
+            "TUTKU",
+            "KIRMIZI"
+        ]
+    },
+    {
+        "name": "TUTKU",
+        "relations": [
+            "AŞK",
+            "KALP",
+            "KIRMIZI"
+        ]
+    },
+    {
+        "name": "KIRMIZI",
+        "relations": [
+            "AŞK",
+            "KALP",
+            "TUTKU"
+        ]
+    },
+    {
+        "name": "KALP",
+        "relations": [
+            "AŞK",
+            "TUTKU",
+            "KIRMIZI"
+        ]
+    },
+    {
+        "name": "TUTKU",
+        "relations": [
+            "AŞK",
+            "KALP",
+            "KIRMIZI"
+        ]
+    },
+    {
+        "name": "KIRMIZI",
+        "relations": [
+            "AŞK",
+            "KALP",
+            "TUTKU"
+        ]
+    },
+    {
+        "name": "KALP",
+        "relations": [
+            "AŞK",
+            "TUTKU",
+            "KIRMIZI"
+        ]
+    },
+    {
+        "name": "TUTKU",
+        "relations": [
+            "AŞK",
+            "KALP",
+            "KIRMIZI"
+        ]
+    },
+    {
+        "name": "KIRMIZI",
+        "relations": [
+            "AŞK",
+            "KALP",
+            "TUTKU"
+        ]
+    },
+    {
+        "name": "KALP",
+        "relations": [
+            "AŞK",
+            "TUTKU",
+            "KIRMIZI"
+        ]
+    },
+    {
+        "name": "",
+        "relations": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
     }
 ]

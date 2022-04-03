@@ -1,8 +1,6 @@
 # ZoO 
 
-Node JS ile geliştirilmiş, web tabanlı kelime tahmin oyunudur. Ekranda gösterilen iki kelimenin çağrıştırdığı ortak kelimeyi bulmanız gerekmektedir. Doğru cevap verdiğiniz taktirde yeni tahmin gelecektir.
-
-Eğlence amaçlı yapılmış geliştirilmiştir.
+Eğlence amaçlı geliştirilmiş web tabanlı kelime tahmin oyunudur. Ekranda gösterilen iki kelimenin çağrıştırdığı ortak kelimeyi bulmanız gerekmektedir. Doğru cevap verdiğiniz taktirde yeni tahmin gelecektir.
 
 ## Oynayalım
 

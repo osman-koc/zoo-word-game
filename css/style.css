@@ -12,9 +12,9 @@ body {
 }
 
 h1 {
-    font-size: 32px;
-    color: #333;
+    font-size: 36px;
     width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 nav {
@@ -25,22 +25,6 @@ nav {
 nav a {
     margin: 0 14px;
     color: #333;
-}
-
-#btn-dark-mode {
-    cursor: pointer;
-    text-decoration: underline;
-}
-
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    justify-content: space-between;
-    max-width: 600px;
-    margin: 0 auto;
-    align-items: center;
-    padding: 5px;
 }
 
 input {
@@ -98,8 +82,33 @@ button {
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
     margin: 20;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(8, 153, 211, 0), rgba(8, 153, 211, 0.75), rgba(8, 153, 211, 0));
+}
+hr.dark-mode {
+    background-image: linear-gradient(to right, rgba(102, 212, 255, 0), rgba(102, 212, 255, 0.75), rgba(102, 212, 255, 0));
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-between;
+    max-width: 600px;
+    margin: 0 auto;
+    align-items: center;
+    padding: 5px;
+}
+
+#btn-dark-mode {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 #relatedwords {
@@ -122,4 +131,19 @@ p {
 
 .relWorkItem.dark-mode {
     border: 1px solid #ccc;
+}
+
+.minw {
+    font-style: italic;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+}
+
+.zoow {
+    color: rgba(4, 118, 163, 0.75);
+}
+
+.zoow.dark-mode {
+    color: rgb(11, 186, 255, 75%);
 }

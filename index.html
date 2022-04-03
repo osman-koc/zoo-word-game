@@ -5,18 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>ZoO - İlişkili kelime tahmin oyunu</title>
+    <meta name="description" content="Verilen birkaç kelimeyle ilişkili bir kelimeyi tahmin etmeye çalışalım.">
+    <title>ZOo Word - Kelime tahmin oyunu</title>
+
+    <link rel="shortcut icon" href="img/logo_32x32.png" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/logo_192x192.png" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header class="container">
-        <h1>ZoO</h1>
+        <h1>
+            <span class="zoow">ZOo</span><span class="minw">Word</span>
+        </h1>
         <nav>
             <a href="https://github.com/osman-koc/zoo-word-game" target="_blank">Github</a>
             <a id="btn-dark-mode">Dark Mode</a>
         </nav>
     </header>
+
+    <hr />
 
     <div class="container">
         <div class="row" id="relatedwords">
@@ -33,54 +41,10 @@
         <button onclick="send_answer()">Gönder</button>
     </div>
 
+    <script src="./data/words.js" type="text/javascript"></script>
     <script src="./scripts/base_methods.js" type="text/javascript"></script>
     <script src="./scripts/darkmode.js" type="text/javascript"></script>
-    <script src="./data/words.js" type="text/javascript"></script>
-
-    <script type="text/javascript">
-        var correctAnswer = '';
-        get_related_words();
-
-        window.answerWord.addEventListener("keyup", function (event) {
-            if (event.keyCode === 13) {
-                event.preventDefault();
-                send_answer();
-            }
-        });
-
-        function get_related_words() {
-            window.answerWord.value = '';
-
-            var response = dbWords[Math.floor(Math.random() * dbWords.length)];
-            correctAnswer = response.name;
-            var relatedWords = response.relations;
-            var relatedWordsString = '';
-
-            if (relatedWords.length == 0) {
-                get_related_words();
-            }
-
-            var randCount = relatedWords.length > 2 ? 3 : relatedWords.length;
-            var randomItems = getRandom(relatedWords, randCount);
-            for (var i = 0; i < randomItems.length; i++) {
-                relatedWordsString += '<span class="relWorkItem">' + randomItems[i] + '</span>';
-            }
-
-            document.getElementById('relatedwords').innerHTML = relatedWordsString;
-        }
-
-        function send_answer() {
-            var answer = window.answerWord.value.turkishToUpper();
-            if (correctAnswer === answer) {
-                alert('Tebrikler! Doğru cevap!');
-                get_related_words();
-            } else {
-                alert('Yanlış cevap!');
-            }
-        }
-
-        window.answerWord = document.getElementById('answerWord');
-    </script>
+    <script src="./scripts/custom_scripts.js" type="text/javascript"></script>
 </body>
 
 </html>

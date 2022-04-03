@@ -49,6 +49,7 @@ body.dark-mode {
 body.dark-mode h1,
 body.dark-mode a,
 body.dark-mode p,
+body.dark-mode li,
 body.dark-mode #relatedwords {
     color: gray;
 }
@@ -95,6 +96,11 @@ hr.dark-mode {
     background-image: linear-gradient(to right, rgba(102, 212, 255, 0), rgba(102, 212, 255, 0.75), rgba(102, 212, 255, 0));
 }
 
+li {
+    margin: 20;
+    text-align: left;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -122,6 +128,7 @@ hr.dark-mode {
 .relWorkItem {
     border: 1px solid rgb(54, 54, 54);
     border-radius: 12px;
+    border-color: rgba(4, 118, 163, 0.75);
     padding: 12px;
     width: 40px;
     margin: 8px;
@@ -131,6 +138,7 @@ hr.dark-mode {
 
 .relWorkItem.dark-mode {
     border: 1px solid #ccc;
+    border-color: rgb(11, 186, 255, 75%);
 }
 
 .minw {
@@ -141,9 +149,9 @@ hr.dark-mode {
 }
 
 .zoow {
-    color: rgba(4, 118, 163, 0.75);
+    color: rgb(0 183 255 / 98%);
 }
 
-.zoow.dark-mode {
-    color: rgb(11, 186, 255, 75%);
+#wordLength {
+    font-weight: bold;
 }

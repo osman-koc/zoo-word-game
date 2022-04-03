@@ -13,6 +13,8 @@ function get_related_words() {
 
     var response = dbWords[Math.floor(Math.random() * dbWords.length)];
     correctAnswer = response.name;
+    window.wordLength.innerHTML = correctAnswer.length;
+
     var relatedWords = response.relations;
     var relatedWordsString = '';
 
@@ -31,7 +33,9 @@ function get_related_words() {
 
 function send_answer() {
     var answer = window.answerWord.value.turkishToUpper();
-    if (correctAnswer === answer) {
+    if (answer === '' || answer === ' ') {
+        alert('Bir kelime yazmalısınız!');
+    } else if (correctAnswer === answer) {
         alert('Tebrikler! Doğru cevap!');
         get_related_words();
     } else {
@@ -40,3 +44,4 @@ function send_answer() {
 }
 
 window.answerWord = document.getElementById('answerWord');
+window.wordLength = document.getElementById('wordLength');

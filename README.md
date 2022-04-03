@@ -8,5 +8,5 @@ Oynamak için link: https://osman-koc.github.io/zoo-word-game/
 
 ## Ekran Görüntüleri 
 
-![DarkModeScreen](img/dark_mode_screen.jpg)
-![LightModeScreen](img/light_mode_screen.jpg)
+![DarkModeScreen](img/darkmode_screen.jpg)
+![LightModeScreen](img/lightmode_screen.jpg)

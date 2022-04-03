@@ -1,4 +1,4 @@
-[
+dbWords = [
     {
        "name":"TAVLA",
        "relations":[

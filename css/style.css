@@ -51,13 +51,13 @@ body.dark-mode a,
 body.dark-mode p,
 body.dark-mode li,
 body.dark-mode #relatedwords {
-    color: gray;
+    color: #bbbbbb;
 }
 
 body.dark-mode input {
     border: 2px solid #3a3a3c;
     background: #121213;
-    color: gray;
+    color: #bbbbbb;
 }
 
 @media only screen and (min-width: 992px) {
@@ -70,10 +70,11 @@ body.dark-mode input {
     }
 }
 
-button {
+#sendBtn {
     width: 600px;
     background-color: #4c6faf;
     border: none;
+    border-radius: 50px;
     color: white;
     padding: 10px 30px;
     text-align: center;
@@ -92,12 +93,14 @@ hr {
     height: 2px;
     background-image: linear-gradient(to right, rgba(8, 153, 211, 0), rgba(8, 153, 211, 0.75), rgba(8, 153, 211, 0));
 }
+
 hr.dark-mode {
     background-image: linear-gradient(to right, rgba(102, 212, 255, 0), rgba(102, 212, 255, 0.75), rgba(102, 212, 255, 0));
 }
 
 li {
     margin: 20;
+    padding: 20;
     text-align: left;
 }
 
@@ -138,7 +141,7 @@ li {
 
 .relWorkItem.dark-mode {
     border: 1px solid #ccc;
-    border-color: rgb(11, 186, 255, 75%);
+    border-color: rgb(82, 206, 255, 98%);
 }
 
 .minw {
@@ -149,7 +152,7 @@ li {
 }
 
 .zoow {
-    color: rgb(0 183 255 / 98%);
+    color: rgb(82, 206, 255, 98%);
 }
 
 #wordLength {

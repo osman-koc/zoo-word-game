@@ -34,12 +34,12 @@ function get_related_words() {
 function send_answer() {
     var answer = window.answerWord.value.turkishToUpper();
     if (answer === '' || answer === ' ') {
-        alert('Bir kelime yazmalısınız!');
+        toastr.info('Bir kelime yazmalısınız!');
     } else if (correctAnswer === answer) {
-        alert('Tebrikler! Doğru cevap!');
+        toastr.success('Tebrikler! Doğru cevap!');
         get_related_words();
     } else {
-        alert('Yanlış cevap!');
+        toastr.error('Yanlış cevap!');
     }
 }
 

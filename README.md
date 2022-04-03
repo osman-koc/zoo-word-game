@@ -1,6 +1,6 @@
-# ZoO 
+# ZoO Word
 
-Eğlence amaçlı geliştirilmiş web tabanlı kelime tahmin oyunudur. Ekranda gösterilen iki kelimenin çağrıştırdığı ortak kelimeyi bulmanız gerekmektedir. Doğru cevap verdiğiniz taktirde yeni tahmin gelecektir.
+Eğlence amaçlı geliştirilmiş web tabanlı kelime tahmin oyunudur. Ekranda gösterilen kelimelerin çağrıştırdığı veya bunların ilişkili olduğu ortak kelimeyi bulmanız gerekmektedir. Doğru cevap verdiğiniz taktirde yeni tahmin gelecektir.
 
 ## Oynayalım
 

@@ -70,19 +70,6 @@ body.dark-mode input {
     }
 }
 
-#sendBtn {
-    width: 600px;
-    background-color: #4c6faf;
-    border: none;
-    border-radius: 50px;
-    color: white;
-    padding: 10px 30px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 20px;
-}
-
 p {
     font-size: 18px;
     margin: 20;
@@ -112,7 +99,31 @@ li {
     max-width: 600px;
     margin: 0 auto;
     align-items: center;
-    padding: 5px;
+    padding: 4px;
+}
+
+/* .okBtn,
+.okBtn-send,
+.okBtn-change {
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+} */
+
+.okBtn-change {
+    color: white;
+    padding-left: 15px;
+    text-align: left;
+}
+
+.okBtn-send {
+    color: white;
+    padding-left: 15px;
+    text-align: right;
 }
 
 #btn-dark-mode {
@@ -124,7 +135,7 @@ li {
     line-height: 27px;
     max-width: 600px;
     color: #333;
-    padding-top: 40px;
+    padding-top: 10px;
     padding-bottom: 12px;
 }
 
@@ -157,4 +168,9 @@ li {
 
 #wordLength {
     font-weight: bold;
+}
+
+.center {
+    margin: auto;
+    padding: 10px;
 }

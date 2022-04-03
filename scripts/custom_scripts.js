@@ -22,10 +22,13 @@ function get_related_words() {
         get_related_words();
     }
 
-    var randCount = relatedWords.length > 2 ? 3 : relatedWords.length;
+    var randCount = relatedWords.length > 4 ? 5 : relatedWords.length;
     var randomItems = getRandom(relatedWords, randCount);
     for (var i = 0; i < randomItems.length; i++) {
         relatedWordsString += '<span class="relWorkItem">' + randomItems[i] + '</span>';
+        if (i === parseInt(randomItems.length / 2) - 1) {
+            relatedWordsString += '<br><br>';
+        }
     }
 
     document.getElementById('relatedwords').innerHTML = relatedWordsString;

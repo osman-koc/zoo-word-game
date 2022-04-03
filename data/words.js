@@ -526,5 +526,71 @@ dbWords = [
             "TUTKU",
             "KIRMIZI"
         ]
+    },
+    {
+        "name": "MOUSE",
+        "relations": [
+            "FARE",
+            "BİLGİSAYAR",
+            "TUŞ",
+            "KLİK"
+        ]
+    },
+    {
+        "name": "FARE",
+        "relations": [
+            "MOUSE",
+            "BİLGİSAYAR",
+            "TUŞ",
+            "KLİK"
+        ]
+    },
+    {
+        "name": "BİLGİSAYAR",
+        "relations": [
+            "MOUSE",
+            "FARE",
+            "TUŞ",
+            "KLİK"
+        ]
+    },
+    {
+        "name": "KLAVYE",
+        "relations": [  
+            "KLİK",
+            "TUŞ",
+            "MOUSE",
+            "FARE"
+        ]
+    },
+    {
+        "name": "TAKVİM",
+        "relations": [
+            "YIL",
+            "AY",
+            "HAFTA",
+            "GÜN",
+            "SAYI"
+        ]
+    },
+    {
+        "name": "YIL",
+        "relations": [
+            "TAKVİM",
+            "AY",
+            "HAFTA",
+            "GÜN",
+            "SAYI"
+        ]
+    },
+    {
+        "name": "AY",
+        "relations": [
+            "TAKVİM",
+            "YIL",
+            "HAFTA",
+            "GÜN",
+            "SAYI"
+        ]
     }
 ]

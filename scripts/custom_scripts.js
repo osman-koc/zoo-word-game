@@ -14,6 +14,7 @@ function get_related_words() {
     var response = dbWords[Math.floor(Math.random() * dbWords.length)];
     correctAnswer = response.name;
     window.wordLength.innerHTML = correctAnswer.length;
+    window.firstLetter.innerHTML = correctAnswer.charAt(0);
 
     var relatedWords = response.relations;
     var relatedWordsString = '';
@@ -48,3 +49,4 @@ function send_answer() {
 
 window.answerWord = document.getElementById('answerWord');
 window.wordLength = document.getElementById('wordLength');
+window.firstLetter = document.getElementById('firstLetter');

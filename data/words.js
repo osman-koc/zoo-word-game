@@ -3,7 +3,7 @@ dbWords = [
       "name": "TAVLA",
       "relations": [
          "ZAR",
-         "OYÜN",
+         "OYUN",
          "YENMEK",
          "MARS",
          "KAPI"
@@ -36,7 +36,7 @@ dbWords = [
          "ISTAKA",
          "TAŞ",
          "4 KİŞİ",
-         "OYÜN"
+         "OYUN"
       ]
    },
    {
@@ -145,7 +145,7 @@ dbWords = [
          "SES",
          "KALP",
          "DOKTOR",
-         "BOYÜN",
+         "BOYUN",
          "KULAK"
       ]
    },
@@ -802,7 +802,7 @@ dbWords = [
    {
       "name": "ZAR",
       "relations": [
-         "OYÜN",
+         "OYUN",
          "YENMEK",
          "MARS",
          "KAPI",
@@ -810,7 +810,7 @@ dbWords = [
       ]
    },
    {
-      "name": "OYÜN",
+      "name": "OYUN",
       "relations": [
          "ZAR",
          "YENMEK",
@@ -823,7 +823,7 @@ dbWords = [
       "name": "YENMEK",
       "relations": [
          "ZAR",
-         "OYÜN",
+         "OYUN",
          "MARS",
          "KAPI",
          "TAVLA"
@@ -833,7 +833,7 @@ dbWords = [
       "name": "MARS",
       "relations": [
          "ZAR",
-         "OYÜN",
+         "OYUN",
          "YENMEK",
          "KAPI",
          "TAVLA"
@@ -843,7 +843,7 @@ dbWords = [
       "name": "KAPI",
       "relations": [
          "ZAR",
-         "OYÜN",
+         "OYUN",
          "YENMEK",
          "MARS",
          "TAVLA"
@@ -955,7 +955,7 @@ dbWords = [
          "ISTAKA",
          "TAŞ",
          "4 KİŞİ",
-         "OYÜN",
+         "OYUN",
          "OKEY"
       ]
    },
@@ -965,7 +965,7 @@ dbWords = [
          "ZAR",
          "TAŞ",
          "4 KİŞİ",
-         "OYÜN",
+         "OYUN",
          "OKEY"
       ]
    },
@@ -975,12 +975,12 @@ dbWords = [
          "ZAR",
          "ISTAKA",
          "4 KİŞİ",
-         "OYÜN",
+         "OYUN",
          "OKEY"
       ]
    },
    {
-      "name": "OYÜN",
+      "name": "OYUN",
       "relations": [
          "ZAR",
          "ISTAKA",
@@ -1444,7 +1444,7 @@ dbWords = [
       "relations": [
          "KALP",
          "DOKTOR",
-         "BOYÜN",
+         "BOYUN",
          "KULAK",
          "STETESKOP"
       ]
@@ -1454,7 +1454,7 @@ dbWords = [
       "relations": [
          "SES",
          "DOKTOR",
-         "BOYÜN",
+         "BOYUN",
          "KULAK",
          "STETESKOP"
       ]
@@ -1464,13 +1464,13 @@ dbWords = [
       "relations": [
          "SES",
          "KALP",
-         "BOYÜN",
+         "BOYUN",
          "KULAK",
          "STETESKOP"
       ]
    },
    {
-      "name": "BOYÜN",
+      "name": "BOYUN",
       "relations": [
          "SES",
          "KALP",
@@ -1485,7 +1485,7 @@ dbWords = [
          "SES",
          "KALP",
          "DOKTOR",
-         "BOYÜN",
+         "BOYUN",
          "STETESKOP"
       ]
    },

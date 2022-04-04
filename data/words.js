@@ -3,7 +3,7 @@ dbWords = [
       "name": "TAVLA",
       "relations": [
          "ZAR",
-         "OYUN",
+         "OYÜN",
          "YENMEK",
          "MARS",
          "KAPI"
@@ -36,7 +36,7 @@ dbWords = [
          "ISTAKA",
          "TAŞ",
          "4 KİŞİ",
-         "OYUN"
+         "OYÜN"
       ]
    },
    {
@@ -72,11 +72,11 @@ dbWords = [
    {
       "name": "AŞK",
       "relations": [
-         "KALP",
-         "BAYAN&ERKEK",
+         "KALP",,
          "TUTKU",
          "KIRMIZI",
-         "SEKS"
+         "KELEBEK",
+         "SEVGİ"
       ]
    },
    {
@@ -145,7 +145,7 @@ dbWords = [
          "SES",
          "KALP",
          "DOKTOR",
-         "BOYUN",
+         "BOYÜN",
          "KULAK"
       ]
    },
@@ -262,21 +262,21 @@ dbWords = [
    {
       "name": "ARABA",
       "relations": [
-         "ULASIM",
-         "ARAC",
+         "ULAŞIM",
+         "ARAÇ",
          "HIZ",
          "FREN",
          "GAZ"
       ]
    },
    {
-      "name": "UCAK",
+      "name": "UÇAK",
       "relations": [
-         "UCMAK",
+         "UÇMAK",
          "HAVA",
          "HIZ",
          "HOSTES",
-         "PILOT"
+         "PİLOT"
       ]
    },
    {
@@ -285,16 +285,16 @@ dbWords = [
          "ODA",
          "SALON",
          "WC",
-         "YASAMAK",
+         "YAŞAMAK",
          "YUVA"
       ]
    },
    {
-      "name": "OFIS",
+      "name": "OFİS",
       "relations": [
-         "CALISMAK",
+         "ÇALIŞMAK",
          "PARA",
-         "FOTOKOPI",
+         "FOTOKOPİ",
          "FAKS",
          "TELEFON"
       ]
@@ -303,8 +303,8 @@ dbWords = [
       "name": "OTEL",
       "relations": [
          "UYUMAK",
-         "TATIL",
-         "HIZMET",
+         "TATİL",
+         "HİZMET",
          "PALAS",
          "MASAJ"
       ]
@@ -312,9 +312,9 @@ dbWords = [
    {
       "name": "DOST",
       "relations": [
-         "GUVEN",
-         "SAMIMI",
-         "DURUST",
+         "GÜVEN",
+         "SAMİMİ",
+         "DÜRÜST",
          "NAMUSLU",
          "AHLAKLI"
       ]
@@ -322,15 +322,15 @@ dbWords = [
    {
       "name": "MASA",
       "relations": [
-         "CEKMECE",
-         "BILGISAYAR",
+         "ÇEKMECE",
+         "BİLGİSAYAR",
          "YEMEK",
          "KALEM",
          "DOSYA"
       ]
    },
    {
-      "name": "BILGISAYAR",
+      "name": "BİLGİSAYAR",
       "relations": [
          "FARE",
          "EKRAN",
@@ -344,7 +344,7 @@ dbWords = [
       "relations": [
          "EV",
          "ARABA",
-         "GAYRIMENKUL",
+         "GAYRİMENKUL",
          "MENKUL",
          "BONO"
       ]
@@ -352,20 +352,20 @@ dbWords = [
    {
       "name": "BORSA",
       "relations": [
-         "INIS",
-         "CIKIS",
+         "İNİŞ",
+         "ÇIKIŞ",
          "HİSSE",
-         "SUPEKILASYON",
+         "SÜPEKİLASYON",
          "BROKER"
       ]
    },
    {
       "name": "KAZAK",
       "relations": [
-         "YUN",
-         "IPLIK",
+         "YÜN",
+         "İPLİK",
          "SICAK",
-         "ORME",
+         "ÖRME",
          "YASAK"
       ]
    },
@@ -380,30 +380,30 @@ dbWords = [
       ]
    },
    {
-      "name": "SILAH",
+      "name": "SİLAH",
       "relations": [
          "SAVUNMA",
          "SALDIRI",
-         "MERMI",
+         "MERMİ",
          "NAMLU",
          "ATEŞ ETMEK"
       ]
    },
    {
-      "name": "TURKIYE",
+      "name": "TÜRKİYE",
       "relations": [
-         "ATATURK",
+         "ATATÜRK",
          "CENNET",
-         "BUYUK",
-         "ISTANBUL",
+         "BÜYÜK",
+         "İSTANBUL",
          "ÜLKE"
       ]
    },
    {
       "name": "EXCEL",
       "relations": [
-         "OFFİCE",
-         "BİLGİSAYUAR",
+         "OFİS",
+         "BİLGİSAYAR",
          "TABLO",
          "FORMÜL",
          "WORD"
@@ -802,7 +802,7 @@ dbWords = [
    {
       "name": "ZAR",
       "relations": [
-         "OYUN",
+         "OYÜN",
          "YENMEK",
          "MARS",
          "KAPI",
@@ -810,7 +810,7 @@ dbWords = [
       ]
    },
    {
-      "name": "OYUN",
+      "name": "OYÜN",
       "relations": [
          "ZAR",
          "YENMEK",
@@ -823,7 +823,7 @@ dbWords = [
       "name": "YENMEK",
       "relations": [
          "ZAR",
-         "OYUN",
+         "OYÜN",
          "MARS",
          "KAPI",
          "TAVLA"
@@ -833,7 +833,7 @@ dbWords = [
       "name": "MARS",
       "relations": [
          "ZAR",
-         "OYUN",
+         "OYÜN",
          "YENMEK",
          "KAPI",
          "TAVLA"
@@ -843,7 +843,7 @@ dbWords = [
       "name": "KAPI",
       "relations": [
          "ZAR",
-         "OYUN",
+         "OYÜN",
          "YENMEK",
          "MARS",
          "TAVLA"
@@ -955,7 +955,7 @@ dbWords = [
          "ISTAKA",
          "TAŞ",
          "4 KİŞİ",
-         "OYUN",
+         "OYÜN",
          "OKEY"
       ]
    },
@@ -965,7 +965,7 @@ dbWords = [
          "ZAR",
          "TAŞ",
          "4 KİŞİ",
-         "OYUN",
+         "OYÜN",
          "OKEY"
       ]
    },
@@ -975,22 +975,12 @@ dbWords = [
          "ZAR",
          "ISTAKA",
          "4 KİŞİ",
-         "OYUN",
+         "OYÜN",
          "OKEY"
       ]
    },
    {
-      "name": "4 KİŞİ",
-      "relations": [
-         "ZAR",
-         "ISTAKA",
-         "TAŞ",
-         "OYUN",
-         "OKEY"
-      ]
-   },
-   {
-      "name": "OYUN",
+      "name": "OYÜN",
       "relations": [
          "ZAR",
          "ISTAKA",
@@ -1147,56 +1137,6 @@ dbWords = [
          "DOLMA",
          "KAĞIT",
          "KALEM"
-      ]
-   },
-   {
-      "name": "KALP",
-      "relations": [
-         "BAYAN&ERKEK",
-         "TUTKU",
-         "KIRMIZI",
-         "SEKS",
-         "AŞK"
-      ]
-   },
-   {
-      "name": "BAYAN&ERKEK",
-      "relations": [
-         "KALP",
-         "TUTKU",
-         "KIRMIZI",
-         "SEKS",
-         "AŞK"
-      ]
-   },
-   {
-      "name": "TUTKU",
-      "relations": [
-         "KALP",
-         "BAYAN&ERKEK",
-         "KIRMIZI",
-         "SEKS",
-         "AŞK"
-      ]
-   },
-   {
-      "name": "KIRMIZI",
-      "relations": [
-         "KALP",
-         "BAYAN&ERKEK",
-         "TUTKU",
-         "SEKS",
-         "AŞK"
-      ]
-   },
-   {
-      "name": "SEKS",
-      "relations": [
-         "KALP",
-         "BAYAN&ERKEK",
-         "TUTKU",
-         "KIRMIZI",
-         "AŞK"
       ]
    },
    {
@@ -1504,7 +1444,7 @@ dbWords = [
       "relations": [
          "KALP",
          "DOKTOR",
-         "BOYUN",
+         "BOYÜN",
          "KULAK",
          "STETESKOP"
       ]
@@ -1514,7 +1454,7 @@ dbWords = [
       "relations": [
          "SES",
          "DOKTOR",
-         "BOYUN",
+         "BOYÜN",
          "KULAK",
          "STETESKOP"
       ]
@@ -1524,13 +1464,13 @@ dbWords = [
       "relations": [
          "SES",
          "KALP",
-         "BOYUN",
+         "BOYÜN",
          "KULAK",
          "STETESKOP"
       ]
    },
    {
-      "name": "BOYUN",
+      "name": "BOYÜN",
       "relations": [
          "SES",
          "KALP",
@@ -1545,7 +1485,7 @@ dbWords = [
          "SES",
          "KALP",
          "DOKTOR",
-         "BOYUN",
+         "BOYÜN",
          "STETESKOP"
       ]
    },
@@ -2100,9 +2040,9 @@ dbWords = [
       ]
    },
    {
-      "name": "ULASIM",
+      "name": "ULAŞIM",
       "relations": [
-         "ARAC",
+         "ARAÇ",
          "HIZ",
          "FREN",
          "GAZ",
@@ -2110,9 +2050,9 @@ dbWords = [
       ]
    },
    {
-      "name": "ARAC",
+      "name": "ARAÇ",
       "relations": [
-         "ULASIM",
+         "ULAŞIM",
          "HIZ",
          "FREN",
          "GAZ",
@@ -2122,8 +2062,8 @@ dbWords = [
    {
       "name": "HIZ",
       "relations": [
-         "ULASIM",
-         "ARAC",
+         "ULAŞIM",
+         "ARAÇ",
          "FREN",
          "GAZ",
          "ARABA"
@@ -2132,8 +2072,8 @@ dbWords = [
    {
       "name": "FREN",
       "relations": [
-         "ULASIM",
-         "ARAC",
+         "ULAŞIM",
+         "ARAÇ",
          "HIZ",
          "GAZ",
          "ARABA"
@@ -2142,61 +2082,61 @@ dbWords = [
    {
       "name": "GAZ",
       "relations": [
-         "ULASIM",
-         "ARAC",
+         "ULAŞIM",
+         "ARAÇ",
          "HIZ",
          "FREN",
          "ARABA"
       ]
    },
    {
-      "name": "UCMAK",
+      "name": "UÇMAK",
       "relations": [
          "HAVA",
          "HIZ",
          "HOSTES",
-         "PILOT",
-         "UCAK"
+         "PİLOT",
+         "UÇAK"
       ]
    },
    {
       "name": "HAVA",
       "relations": [
-         "UCMAK",
+         "UÇMAK",
          "HIZ",
          "HOSTES",
-         "PILOT",
-         "UCAK"
+         "PİLOT",
+         "UÇAK"
       ]
    },
    {
       "name": "HIZ",
       "relations": [
-         "UCMAK",
+         "UÇMAK",
          "HAVA",
          "HOSTES",
-         "PILOT",
-         "UCAK"
+         "PİLOT",
+         "UÇAK"
       ]
    },
    {
       "name": "HOSTES",
       "relations": [
-         "UCMAK",
+         "UÇMAK",
          "HAVA",
          "HIZ",
-         "PILOT",
-         "UCAK"
+         "PİLOT",
+         "UÇAK"
       ]
    },
    {
-      "name": "PILOT",
+      "name": "PİLOT",
       "relations": [
-         "UCMAK",
+         "UÇMAK",
          "HAVA",
          "HIZ",
          "HOSTES",
-         "UCAK"
+         "UÇAK"
       ]
    },
    {
@@ -2204,7 +2144,7 @@ dbWords = [
       "relations": [
          "SALON",
          "WC",
-         "YASAMAK",
+         "YAŞAMAK",
          "YUVA",
          "EV"
       ]
@@ -2214,7 +2154,7 @@ dbWords = [
       "relations": [
          "ODA",
          "WC",
-         "YASAMAK",
+         "YAŞAMAK",
          "YUVA",
          "EV"
       ]
@@ -2224,13 +2164,13 @@ dbWords = [
       "relations": [
          "ODA",
          "SALON",
-         "YASAMAK",
+         "YAŞAMAK",
          "YUVA",
          "EV"
       ]
    },
    {
-      "name": "YASAMAK",
+      "name": "YAŞAMAK",
       "relations": [
          "ODA",
          "SALON",
@@ -2245,85 +2185,85 @@ dbWords = [
          "ODA",
          "SALON",
          "WC",
-         "YASAMAK",
+         "YAŞAMAK",
          "EV"
       ]
    },
    {
-      "name": "CALISMAK",
+      "name": "ÇALIŞMAK",
       "relations": [
          "PARA",
-         "FOTOKOPI",
+         "FOTOKOPİ",
          "FAKS",
          "TELEFON",
-         "OFIS"
+         "OFİS"
       ]
    },
    {
       "name": "PARA",
       "relations": [
-         "CALISMAK",
-         "FOTOKOPI",
+         "ÇALIŞMAK",
+         "FOTOKOPİ",
          "FAKS",
          "TELEFON",
-         "OFIS"
+         "OFİS"
       ]
    },
    {
-      "name": "FOTOKOPI",
+      "name": "FOTOKOPİ",
       "relations": [
-         "CALISMAK",
+         "ÇALIŞMAK",
          "PARA",
          "FAKS",
          "TELEFON",
-         "OFIS"
+         "OFİS"
       ]
    },
    {
       "name": "FAKS",
       "relations": [
-         "CALISMAK",
+         "ÇALIŞMAK",
          "PARA",
-         "FOTOKOPI",
+         "FOTOKOPİ",
          "TELEFON",
-         "OFIS"
+         "OFİS"
       ]
    },
    {
       "name": "TELEFON",
       "relations": [
-         "CALISMAK",
+         "ÇALIŞMAK",
          "PARA",
-         "FOTOKOPI",
+         "FOTOKOPİ",
          "FAKS",
-         "OFIS"
+         "OFİS"
       ]
    },
    {
       "name": "UYUMAK",
       "relations": [
-         "TATIL",
-         "HIZMET",
+         "TATİL",
+         "HİZMET",
          "PALAS",
          "MASAJ",
          "OTEL"
       ]
    },
    {
-      "name": "TATIL",
+      "name": "TATİL",
       "relations": [
          "UYUMAK",
-         "HIZMET",
+         "HİZMET",
          "PALAS",
          "MASAJ",
          "OTEL"
       ]
    },
    {
-      "name": "HIZMET",
+      "name": "HİZMET",
       "relations": [
          "UYUMAK",
-         "TATIL",
+         "TATİL",
          "PALAS",
          "MASAJ",
          "OTEL"
@@ -2333,8 +2273,8 @@ dbWords = [
       "name": "PALAS",
       "relations": [
          "UYUMAK",
-         "TATIL",
-         "HIZMET",
+         "TATİL",
+         "HİZMET",
          "MASAJ",
          "OTEL"
       ]
@@ -2343,37 +2283,37 @@ dbWords = [
       "name": "MASAJ",
       "relations": [
          "UYUMAK",
-         "TATIL",
-         "HIZMET",
+         "TATİL",
+         "HİZMET",
          "PALAS",
          "OTEL"
       ]
    },
    {
-      "name": "GUVEN",
+      "name": "GÜVEN",
       "relations": [
-         "SAMIMI",
-         "DURUST",
+         "SAMİMİ",
+         "DÜRÜST",
          "NAMUSLU",
          "AHLAKLI",
          "DOST"
       ]
    },
    {
-      "name": "SAMIMI",
+      "name": "SAMİMİ",
       "relations": [
-         "GUVEN",
-         "DURUST",
+         "GÜVEN",
+         "DÜRÜST",
          "NAMUSLU",
          "AHLAKLI",
          "DOST"
       ]
    },
    {
-      "name": "DURUST",
+      "name": "DÜRÜST",
       "relations": [
-         "GUVEN",
-         "SAMIMI",
+         "GÜVEN",
+         "SAMİMİ",
          "NAMUSLU",
          "AHLAKLI",
          "DOST"
@@ -2382,9 +2322,9 @@ dbWords = [
    {
       "name": "NAMUSLU",
       "relations": [
-         "GUVEN",
-         "SAMIMI",
-         "DURUST",
+         "GÜVEN",
+         "SAMİMİ",
+         "DÜRÜST",
          "AHLAKLI",
          "DOST"
       ]
@@ -2392,17 +2332,17 @@ dbWords = [
    {
       "name": "AHLAKLI",
       "relations": [
-         "GUVEN",
-         "SAMIMI",
-         "DURUST",
+         "GÜVEN",
+         "SAMİMİ",
+         "DÜRÜST",
          "NAMUSLU",
          "DOST"
       ]
    },
    {
-      "name": "CEKMECE",
+      "name": "ÇEKMECE",
       "relations": [
-         "BILGISAYAR",
+         "BİLGİSAYAR",
          "YEMEK",
          "KALEM",
          "DOSYA",
@@ -2410,9 +2350,9 @@ dbWords = [
       ]
    },
    {
-      "name": "BILGISAYAR",
+      "name": "BİLGİSAYAR",
       "relations": [
-         "CEKMECE",
+         "ÇEKMECE",
          "YEMEK",
          "KALEM",
          "DOSYA",
@@ -2422,8 +2362,8 @@ dbWords = [
    {
       "name": "YEMEK",
       "relations": [
-         "CEKMECE",
-         "BILGISAYAR",
+         "ÇEKMECE",
+         "BİLGİSAYAR",
          "KALEM",
          "DOSYA",
          "MASA"
@@ -2432,8 +2372,8 @@ dbWords = [
    {
       "name": "KALEM",
       "relations": [
-         "CEKMECE",
-         "BILGISAYAR",
+         "ÇEKMECE",
+         "BİLGİSAYAR",
          "YEMEK",
          "DOSYA",
          "MASA"
@@ -2442,8 +2382,8 @@ dbWords = [
    {
       "name": "DOSYA",
       "relations": [
-         "CEKMECE",
-         "BILGISAYAR",
+         "ÇEKMECE",
+         "BİLGİSAYAR",
          "YEMEK",
          "KALEM",
          "MASA"
@@ -2456,7 +2396,7 @@ dbWords = [
          "WINDOWS",
          "EXCEL",
          "WORD",
-         "BILGISAYAR"
+         "BİLGİSAYAR"
       ]
    },
    {
@@ -2466,7 +2406,7 @@ dbWords = [
          "WINDOWS",
          "EXCEL",
          "WORD",
-         "BILGISAYAR"
+         "BİLGİSAYAR"
       ]
    },
    {
@@ -2476,7 +2416,7 @@ dbWords = [
          "EKRAN",
          "EXCEL",
          "WORD",
-         "BILGISAYAR"
+         "BİLGİSAYAR"
       ]
    },
    {
@@ -2486,7 +2426,7 @@ dbWords = [
          "EKRAN",
          "WINDOWS",
          "WORD",
-         "BILGISAYAR"
+         "BİLGİSAYAR"
       ]
    },
    {
@@ -2496,14 +2436,14 @@ dbWords = [
          "EKRAN",
          "WINDOWS",
          "EXCEL",
-         "BILGISAYAR"
+         "BİLGİSAYAR"
       ]
    },
    {
       "name": "EV",
       "relations": [
          "ARABA",
-         "GAYRIMENKUL",
+         "GAYRİMENKUL",
          "MENKUL",
          "BONO",
          "PARA"
@@ -2513,14 +2453,14 @@ dbWords = [
       "name": "ARABA",
       "relations": [
          "EV",
-         "GAYRIMENKUL",
+         "GAYRİMENKUL",
          "MENKUL",
          "BONO",
          "PARA"
       ]
    },
    {
-      "name": "GAYRIMENKUL",
+      "name": "GAYRİMENKUL",
       "relations": [
          "EV",
          "ARABA",
@@ -2534,7 +2474,7 @@ dbWords = [
       "relations": [
          "EV",
          "ARABA",
-         "GAYRIMENKUL",
+         "GAYRİMENKUL",
          "BONO",
          "PARA"
       ]
@@ -2544,27 +2484,27 @@ dbWords = [
       "relations": [
          "EV",
          "ARABA",
-         "GAYRIMENKUL",
+         "GAYRİMENKUL",
          "MENKUL",
          "PARA"
       ]
    },
    {
-      "name": "INIS",
+      "name": "İNİŞ",
       "relations": [
-         "CIKIS",
+         "ÇIKIŞ",
          "HİSSE",
-         "SUPEKILASYON",
+         "SÜPEKİLASYON",
          "BROKER",
          "BORSA"
       ]
    },
    {
-      "name": "CIKIS",
+      "name": "ÇIKIŞ",
       "relations": [
-         "INIS",
+         "İNİŞ",
          "HİSSE",
-         "SUPEKILASYON",
+         "SÜPEKİLASYON",
          "BROKER",
          "BORSA"
       ]
@@ -2572,18 +2512,18 @@ dbWords = [
    {
       "name": "HİSSE",
       "relations": [
-         "INIS",
-         "CIKIS",
-         "SUPEKILASYON",
+         "İNİŞ",
+         "ÇIKIŞ",
+         "SÜPEKİLASYON",
          "BROKER",
          "BORSA"
       ]
    },
    {
-      "name": "SUPEKILASYON",
+      "name": "SÜPEKİLASYON",
       "relations": [
-         "INIS",
-         "CIKIS",
+         "İNİŞ",
+         "ÇIKIŞ",
          "HİSSE",
          "BROKER",
          "BORSA"
@@ -2592,29 +2532,29 @@ dbWords = [
    {
       "name": "BROKER",
       "relations": [
-         "INIS",
-         "CIKIS",
+         "İNİŞ",
+         "ÇIKIŞ",
          "HİSSE",
-         "SUPEKILASYON",
+         "SÜPEKİLASYON",
          "BORSA"
       ]
    },
    {
-      "name": "YUN",
+      "name": "YÜN",
       "relations": [
-         "IPLIK",
+         "İPLİK",
          "SICAK",
-         "ORME",
+         "ÖRME",
          "YASAK",
          "KAZAK"
       ]
    },
    {
-      "name": "IPLIK",
+      "name": "İPLİK",
       "relations": [
-         "YUN",
+         "YÜN",
          "SICAK",
-         "ORME",
+         "ÖRME",
          "YASAK",
          "KAZAK"
       ]
@@ -2622,18 +2562,18 @@ dbWords = [
    {
       "name": "SICAK",
       "relations": [
-         "YUN",
-         "IPLIK",
-         "ORME",
+         "YÜN",
+         "İPLİK",
+         "ÖRME",
          "YASAK",
          "KAZAK"
       ]
    },
    {
-      "name": "ORME",
+      "name": "ÖRME",
       "relations": [
-         "YUN",
-         "IPLIK",
+         "YÜN",
+         "İPLİK",
          "SICAK",
          "YASAK",
          "KAZAK"
@@ -2642,10 +2582,10 @@ dbWords = [
    {
       "name": "YASAK",
       "relations": [
-         "YUN",
-         "IPLIK",
+         "YÜN",
+         "İPLİK",
          "SICAK",
-         "ORME",
+         "ÖRME",
          "KAZAK"
       ]
    },
@@ -2703,30 +2643,30 @@ dbWords = [
       "name": "SAVUNMA",
       "relations": [
          "SALDIRI",
-         "MERMI",
+         "MERMİ",
          "NAMLU",
          "ATEŞ ETMEK",
-         "SILAH"
+         "SİLAH"
       ]
    },
    {
       "name": "SALDIRI",
       "relations": [
          "SAVUNMA",
-         "MERMI",
+         "MERMİ",
          "NAMLU",
          "ATEŞ ETMEK",
-         "SILAH"
+         "SİLAH"
       ]
    },
    {
-      "name": "MERMI",
+      "name": "MERMİ",
       "relations": [
          "SAVUNMA",
          "SALDIRI",
          "NAMLU",
          "ATEŞ ETMEK",
-         "SILAH"
+         "SİLAH"
       ]
    },
    {
@@ -2734,9 +2674,9 @@ dbWords = [
       "relations": [
          "SAVUNMA",
          "SALDIRI",
-         "MERMI",
+         "MERMİ",
          "ATEŞ ETMEK",
-         "SILAH"
+         "SİLAH"
       ]
    },
    {
@@ -2744,65 +2684,65 @@ dbWords = [
       "relations": [
          "SAVUNMA",
          "SALDIRI",
-         "MERMI",
+         "MERMİ",
          "NAMLU",
-         "SILAH"
+         "SİLAH"
       ]
    },
    {
-      "name": "ATATURK",
+      "name": "ATATÜRK",
       "relations": [
          "CENNET",
-         "BUYUK",
-         "ISTANBUL",
+         "BÜYÜK",
+         "İSTANBUL",
          "ÜLKE",
-         "TURKIYE"
+         "TÜRKİYE"
       ]
    },
    {
       "name": "CENNET",
       "relations": [
-         "ATATURK",
-         "BUYUK",
-         "ISTANBUL",
+         "ATATÜRK",
+         "BÜYÜK",
+         "İSTANBUL",
          "ÜLKE",
-         "TURKIYE"
+         "TÜRKİYE"
       ]
    },
    {
-      "name": "BUYUK",
+      "name": "BÜYÜK",
       "relations": [
-         "ATATURK",
+         "ATATÜRK",
          "CENNET",
-         "ISTANBUL",
+         "İSTANBUL",
          "ÜLKE",
-         "TURKIYE"
+         "TÜRKİYE"
       ]
    },
    {
-      "name": "ISTANBUL",
+      "name": "İSTANBUL",
       "relations": [
-         "ATATURK",
+         "ATATÜRK",
          "CENNET",
-         "BUYUK",
+         "BÜYÜK",
          "ÜLKE",
-         "TURKIYE"
+         "TÜRKİYE"
       ]
    },
    {
       "name": "ÜLKE",
       "relations": [
-         "ATATURK",
+         "ATATÜRK",
          "CENNET",
-         "BUYUK",
-         "ISTANBUL",
-         "TURKIYE"
+         "BÜYÜK",
+         "İSTANBUL",
+         "TÜRKİYE"
       ]
    },
    {
-      "name": "OFFİCE",
+      "name": "OFİS",
       "relations": [
-         "BİLGİSAYUAR",
+         "BİLGİSAYAR",
          "TABLO",
          "FORMÜL",
          "WORD",
@@ -2810,9 +2750,9 @@ dbWords = [
       ]
    },
    {
-      "name": "BİLGİSAYUAR",
+      "name": "BİLGİSAYAR",
       "relations": [
-         "OFFİCE",
+         "OFİS",
          "TABLO",
          "FORMÜL",
          "WORD",
@@ -2822,8 +2762,8 @@ dbWords = [
    {
       "name": "TABLO",
       "relations": [
-         "OFFİCE",
-         "BİLGİSAYUAR",
+         "OFİS",
+         "BİLGİSAYAR",
          "FORMÜL",
          "WORD",
          "EXCEL"
@@ -2832,8 +2772,8 @@ dbWords = [
    {
       "name": "FORMÜL",
       "relations": [
-         "OFFİCE",
-         "BİLGİSAYUAR",
+         "OFİS",
+         "BİLGİSAYAR",
          "TABLO",
          "WORD",
          "EXCEL"
@@ -2842,8 +2782,8 @@ dbWords = [
    {
       "name": "WORD",
       "relations": [
-         "OFFİCE",
-         "BİLGİSAYUAR",
+         "OFİS",
+         "BİLGİSAYAR",
          "TABLO",
          "FORMÜL",
          "EXCEL"
@@ -3786,16 +3726,6 @@ dbWords = [
          "DUVAR",
          "ZAMAN",
          "24",
-         "SAAT"
-      ]
-   },
-   {
-      "name": "24",
-      "relations": [
-         "KOL",
-         "DUVAR",
-         "ZAMAN",
-         "SAYI",
          "SAAT"
       ]
    },

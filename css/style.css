@@ -183,6 +183,9 @@ li {
 
 
 /* Button style start */
+.button-passive {
+    background-image: linear-gradient(92.88deg,#6a6a6afa 9.16%,#767a7a 43.89%,#676868de 64.72%) !important;
+}
 .button-36 {
     background-image: linear-gradient(92.88deg, #14a9e5 9.16%, #34aad9 43.89%, #00aef3 64.72%);
     border-radius: 8px;

@@ -734,7 +734,7 @@ dbWords = [
       "relations": [
          "GÖZ",
          "CAM",
-         "CERÇEVE",
+         "ÇERÇEVE",
          "TEKMAK",
          "BAKMAK"
       ]
@@ -4383,7 +4383,7 @@ dbWords = [
       "name": "GÖZ",
       "relations": [
          "CAM",
-         "CERÇEVE",
+         "ÇERÇEVE",
          "TEKMAK",
          "BAKMAK",
          "GÖZLÜK"
@@ -4393,14 +4393,14 @@ dbWords = [
       "name": "CAM",
       "relations": [
          "GÖZ",
-         "CERÇEVE",
+         "ÇERÇEVE",
          "TEKMAK",
          "BAKMAK",
          "GÖZLÜK"
       ]
    },
    {
-      "name": "CERÇEVE",
+      "name": "ÇERÇEVE",
       "relations": [
          "GÖZ",
          "CAM",
@@ -4414,7 +4414,7 @@ dbWords = [
       "relations": [
          "GÖZ",
          "CAM",
-         "CERÇEVE",
+         "ÇERÇEVE",
          "BAKMAK",
          "GÖZLÜK"
       ]
@@ -4424,7 +4424,7 @@ dbWords = [
       "relations": [
          "GÖZ",
          "CAM",
-         "CERÇEVE",
+         "ÇERÇEVE",
          "TEKMAK",
          "GÖZLÜK"
       ]

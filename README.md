@@ -9,6 +9,6 @@ Oynamak için link: https://osman-koc.github.io/zoo-word-game/
 ## Ekran Görüntüleri 
 
 ### Dark Mode
-![DarkModeScreen](img/dark_mode_screen.jpg)
+![DarkModeScreen](img/darkmode_screen.jpg)
 ### Light Mode
-![LightModeScreen](img/light_mode_screen.jpg)
+![LightModeScreen](img/lightmode_screen.jpg)

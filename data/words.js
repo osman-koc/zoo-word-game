@@ -72,7 +72,7 @@ dbWords = [
    {
       "name": "AŞK",
       "relations": [
-         "KALP",,
+         "KALP",
          "TUTKU",
          "KIRMIZI",
          "KELEBEK",

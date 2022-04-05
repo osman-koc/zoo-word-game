@@ -8,14 +8,19 @@ window.answerWord.addEventListener("keyup", function (event) {
     }
 });
 
+function getWord(){
+    var response = dbWords[Math.floor(Math.random() * dbWords.length)];
+    correctAnswer = response.name;
+    window.firstLetter.innerHTML = correctAnswer.charAt(0);
+    window.wordLength.innerHTML = correctAnswer.length;
+    window.answerWord.maxLength = correctAnswer.length;
+    return response;
+}
+
 function getRelatedWords() {
     window.answerWord.value = '';
 
-    var response = dbWords[Math.floor(Math.random() * dbWords.length)];
-    correctAnswer = response.name;
-    window.wordLength.innerHTML = correctAnswer.length;
-    window.firstLetter.innerHTML = correctAnswer.charAt(0);
-
+    var response = getWord();
     var relatedWords = response.relations;
     var relatedWordsString = '';
 

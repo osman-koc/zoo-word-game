@@ -8,7 +8,7 @@ window.answerWord.addEventListener("keyup", function (event) {
     }
 });
 
-function getWord(){
+function getWord() {
     var response = dbWords[Math.floor(Math.random() * dbWords.length)];
     correctAnswer = response.name;
     window.firstLetter.innerHTML = correctAnswer.charAt(0);
@@ -31,9 +31,13 @@ function getRelatedWords() {
     var randCount = relatedWords.length > 4 ? 5 : relatedWords.length;
     var randomItems = getRandom(relatedWords, randCount);
     sortByLength(randomItems);
+    
     for (var i = 0; i < randomItems.length; i++) {
         relatedWordsString += '<span class="relWorkItem">' + randomItems[i] + '</span>';
-        if (i === parseInt(randomItems.length / 2) - 1) {
+        
+        var isItToLong = (i !== randomItems.length - 1 && (randomItems[i].length + randomItems[i + 1].length) > 16);
+        
+        if (i === parseInt(randomItems.length / 2) - 1 || isItToLong) {
             relatedWordsString += '<br><br>';
         }
     }

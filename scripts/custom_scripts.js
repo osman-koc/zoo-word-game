@@ -1,14 +1,14 @@
 var correctAnswer = '';
-get_related_words();
+getRelatedWords();
 
 window.answerWord.addEventListener("keyup", function (event) {
     if (event.keyCode === 13) {
         event.preventDefault();
-        send_answer();
+        sendAnswer();
     }
 });
 
-function get_related_words() {
+function getRelatedWords() {
     window.answerWord.value = '';
 
     var response = dbWords[Math.floor(Math.random() * dbWords.length)];
@@ -20,7 +20,7 @@ function get_related_words() {
     var relatedWordsString = '';
 
     if (relatedWords.length == 0) {
-        get_related_words();
+        getRelatedWords();
     }
 
     var randCount = relatedWords.length > 4 ? 5 : relatedWords.length;
@@ -36,13 +36,13 @@ function get_related_words() {
     document.getElementById('relatedwords').innerHTML = relatedWordsString;
 }
 
-function send_answer() {
+function sendAnswer() {
     var answer = window.answerWord.value.turkishToUpper();
     if (answer === '' || answer === ' ') {
         toastr.info('Bir kelime yazmalısınız!');
     } else if (correctAnswer === answer) {
         toastr.success('Tebrikler! Doğru cevap!');
-        get_related_words();
+        getRelatedWords();
     } else {
         toastr.error('Yanlış cevap!');
     }
